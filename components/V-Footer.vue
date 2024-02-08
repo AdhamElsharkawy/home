@@ -3,8 +3,8 @@
         <div ref="footerWrapper" class="footer__wrapper" data-scroll-sticky>
             <div ref="footerContent" class="footer__content">
                 <p ref="footerContentTitle" class="footer__content__title">
-                    Farish <br />
-                    <span class="serif">Irfan</span>
+                    Adham <br />
+                    <span class="serif">Elsharkawy</span>
                 </p>
                 <ul class="footer__content__social">
                     <li
@@ -25,9 +25,9 @@
                 </ul>
 
                 <p class="footer__content__copyright">
-                    Copyright ©{{ getCurrentYear() }} FI
+                    Copyright ©{{ getCurrentYear() }} AE
                 </p>
-                <p class="footer__content__note">Made with ❤ from Malaysia!</p>
+                <p class="footer__content__note">Made with ❤ from Egypt!</p>
             </div>
             <div
                 class="footer__arrow__wrapper"
@@ -50,20 +50,16 @@ export default {
     data: () => ({
         socialLinks: [
             {
-                label: 'linktree',
-                href: 'https://linktr.ee/fxrysh'
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/adham-elsharkawy-4b8b70240/'
             },
             {
                 label: 'github',
-                href: 'https://github.com/fxrysh'
-            },
-            {
-                label: 'twitter',
-                href: 'https://twitter.com/fxrysh'
+                href: 'https://github.com/AdhamElsharkawy'
             },
             {
                 label: 'email',
-                href: 'mailto:hello@farish.is-a.dev'
+                href: 'mailto:adhamm.elsharkawyy@gmail.com'
             }
         ]
     }),

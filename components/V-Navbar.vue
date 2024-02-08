@@ -13,7 +13,7 @@
             aria-label="to top"
             @click="$scrollTo(0), $nuxt.$emit('toggle-menu', false)"
         >
-            <span aria-hidden="true">FI</span>
+            <span aria-hidden="true">AE</span>
         </button>
 
         <div ref="navSections" class="nav__sections">

@@ -4,12 +4,14 @@
 
         <div ref="headerContainer" class="header__container">
             <h1 class="header__container__title">
-                <span class="sr-only">Farish Irfan</span>
+                <span class="sr-only">Adham Elsharkawy</span>
                 <span class="line" aria-hidden="true">
-                    <span class="line__content">Farish</span>
+                    <span class="line__content">Adham</span>
                 </span>
                 <span class="line" aria-hidden="true">
-                    <span class="line__content ml-responsive serif">Irfan</span>
+                    <span class="line__content ml-responsive serif"
+                        >El-Sharkawy</span
+                    >
                 </span>
             </h1>
 

@@ -1,7 +1,7 @@
 ---
 title: Portfolio
-source: https://github.com/fxrysh/portfolio/
-live: https://fxrysh.is-a.dev/
+source: https://github.com/AdhamElsharkawy
+live: https://adhamdev.me
 tags:
     - Website
     - NuxtJS
@@ -10,5 +10,5 @@ tags:
     - GSAP
     - SSCSS
 desc: Personal portfolio written in VueJS
-image: /portfolio.jpeg
+image: /portfolio.png
 ---

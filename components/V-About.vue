@@ -48,38 +48,33 @@
 
 <script>
 import JS_SVG from '~/images/logo/JavaScript.svg?inline';
-import TS_SVG from '~/images/logo/TypeScript.svg?inline';
-import PY_SVG from '~/images/logo/Python.svg?inline';
+import PHP_SVG from '~/images/logo/php.svg?inline';
 import HTML_SVG from '~/images/logo/HTML.svg?inline';
-import RS_SVG from '~/images/logo/Rust.svg?inline';
+import LA_SVG from '~/images/logo/laravel.svg?inline';
 import CSS_SVG from '~/images/logo/CSS.svg?inline';
 
 export default {
-    components: { HTML_SVG, CSS_SVG, JS_SVG, TS_SVG, PY_SVG, RS_SVG },
+    components: { HTML_SVG, CSS_SVG, JS_SVG, PHP_SVG, LA_SVG },
     data: () => ({
         about: null,
         icons: [
+            {
+                svg: 'PHP_SVG',
+                link: 'https://www.php.net/'
+            },
+            {
+                svg: 'LA_SVG',
+                link: 'https://laravel.com/'
+            },
             {
                 svg: 'JS_SVG',
                 link: 'https://js.irg/'
             },
             {
-                svg: 'TS_SVG',
-                link: 'https://typescriptlang.org/'
-            },
-            {
                 svg: 'HTML_SVG'
             },
             {
-                svg: 'RS_SVG',
-                link: 'https://rust-lang.org/'
-            },
-            {
                 svg: 'CSS_SVG'
-            },
-            {
-                svg: 'PY_SVG',
-                link: 'https://python.org/'
             }
         ]
     }),
