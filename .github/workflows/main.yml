@@ -26,9 +26,18 @@ jobs:
     - name: Build Project
       run: npm run gen
 
-    - name: Deploy Project
+    - name: Setup SSH for Deployment
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+    - name: Configure SSH for GitHub
+      run: |
+        SSH_REPO="git@github.com:${GITHUB_REPOSITORY}.git"
+        git remote set-url origin $SSH_REPO
+
+    - name: Deploy Project with gh-pages
       run: |
         git config --global user.name "github-actions-bot"
         git config --global user.email "support+actions@github.com"
-        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-
+        npm run deploy
