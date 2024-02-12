@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:  # Setting permissions globally for all jobs
+  contents: write
+  deployments: write
+
 jobs:
   deploy:
     name: Deploy
@@ -17,7 +21,7 @@ jobs:
     - name: Setup NodeJS
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '18'
         cache: npm
 
     - name: Install Dependencies
@@ -29,6 +33,6 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # The branch the action should deploy to.
+        branch: gh-pages
         folder: dist
         token: ${{ secrets.GITHUB_TOKEN }}
