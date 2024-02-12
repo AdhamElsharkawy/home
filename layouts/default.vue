@@ -13,7 +13,7 @@ export default {
     name: 'DefaultLayout',
     mounted() {
         this.clear();
-        this.logGreeting();
+        // this.logGreeting();
         this.setViewHeight();
         window.addEventListener('resize', this.setViewHeight);
     },
@@ -22,11 +22,11 @@ export default {
             const vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         },
-        logGreeting() {
-            console.log(
-                "Looking for source code? Why not check the repository itself! Don't forget to leave a ⭐!\nRepository: https://github.com/fxrysh/portfolio"
-            );
-        },
+        // logGreeting() {
+        //     console.log(
+        //         "Looking for source code? Why not check the repository itself! Don't forget to leave a ⭐!\nRepository: https://github.com/AdhamElsharkawy/home"
+        //     );
+        // },
         clear() {
             console.clear();
         }
