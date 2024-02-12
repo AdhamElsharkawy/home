@@ -1,4 +1,4 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{442:function(E,x,s){"use strict";s.r(x);var f=function(){var v=this,o=v.$createElement,i=v._self._c||o;return i("canvas",{ref:"canvas",staticClass:"canvas",attrs:{"aria-label":"landing background"}})},p=[],n=s(316),h=`#define GLSLIFY 1
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{443:function(E,x,s){"use strict";s.r(x);var f=function(){var v=this,o=v.$createElement,i=v._self._c||o;return i("canvas",{ref:"canvas",staticClass:"canvas",attrs:{"aria-label":"landing background"}})},p=[],n=s(317),h=`#define GLSLIFY 1
 uniform float objectOpacity;
 uniform float randomSeed;
 uniform float noisePower;
