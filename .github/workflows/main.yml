@@ -17,7 +17,7 @@ jobs:
     - name: Setup NodeJS
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '18'
         cache: npm
 
     - name: Install Dependencies
@@ -26,18 +26,8 @@ jobs:
     - name: Build Project
       run: npm run gen
 
-    - name: Setup SSH for Deployment
-      uses: webfactory/ssh-agent@v0.5.3
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
-
-    - name: Configure SSH for GitHub
-      run: |
-        SSH_REPO="git@github.com:${GITHUB_REPOSITORY}.git"
-        git remote set-url origin $SSH_REPO
-
-    - name: Deploy Project with gh-pages
-      run: |
-        git config --global user.name "github-actions-bot"
-        git config --global user.email "support+actions@github.com"
-        npm run deploy
+        branch: gh-pages  # The branch the action should deploy to.
+        folder: .nuxt
