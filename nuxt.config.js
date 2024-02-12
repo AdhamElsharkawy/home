@@ -19,7 +19,7 @@ export default {
             }
         ]
     },
-
+//
     router: {
         base: '/home/' ,
         middleware: ['redirect']        
