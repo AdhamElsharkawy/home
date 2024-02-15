@@ -63,20 +63,16 @@ export default {
             ],
             socialLinks: [
                 {
-                    label: 'linktree',
-                    href: 'https://linktr.ee/fxrysh'
+                    label: 'LinkedIn',
+                    href: 'https://www.linkedin.com/in/adham-elsharkawy-4b8b70240/'
                 },
                 {
                     label: 'github',
-                    href: 'https://github.com/fxrysh'
-                },
-                {
-                    label: 'twitter',
-                    href: 'https://twitter.com/fxrysh'
+                    href: 'https://github.com/AdhamElsharkawy'
                 },
                 {
                     label: 'email',
-                    href: 'mailto:hello@farish.is-a.dev'
+                    href: 'mailto:adhamm.elsharkawyy@gmail.com'
                 }
             ]
         };

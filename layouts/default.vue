@@ -29,7 +29,8 @@ export default {
         // },
         clear() {
             console.clear();
-        }
+        },
+        
     }
 };
 </script>
