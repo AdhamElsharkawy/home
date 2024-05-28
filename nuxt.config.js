@@ -21,7 +21,7 @@ export default {
     },
 
     router: {
-        base: '/home/' || '/',
+        base: '/home/',
         middleware: ['redirect']
     },
 
