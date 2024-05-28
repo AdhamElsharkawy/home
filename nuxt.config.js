@@ -19,10 +19,10 @@ export default {
             }
         ]
     },
-//
+
     router: {
-        base: '/home/' ,
-        middleware: ['redirect']        
+        base: '/home/' || '/',
+        middleware: ['redirect']
     },
 
     server: {
