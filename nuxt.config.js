@@ -3,7 +3,9 @@ import 'dotenv/config';
 export default {
     components: true,
     target: 'static',
-
+    generate: {
+        dir: 'dist'
+    },
     head: {
         htmlAttrs: { lang: 'en', dir: 'ltr' },
         title: 'Adham Elsharkawy | Portfolio',
