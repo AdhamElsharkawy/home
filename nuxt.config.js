@@ -3,9 +3,6 @@ import 'dotenv/config';
 export default {
     components: true,
     target: 'static',
-    generate: {
-        dir: 'dist'
-    },
     head: {
         htmlAttrs: { lang: 'en', dir: 'ltr' },
         title: 'Adham Elsharkawy | Portfolio',
@@ -20,6 +17,10 @@ export default {
                 content: 'width=device-width, initial-scale=1.0'
             }
         ]
+    },
+    router: {
+    base: '/home/',
+    middleware: ['redirect']
     },
     server: {
         port: parseInt(process.env.PORT) || 8000,
