@@ -3,9 +3,6 @@ import 'dotenv/config';
 export default {
     components: true,
     target: 'static',
-    generate: {
-        dir: 'dist'
-    },
     head: {
         htmlAttrs: { lang: 'en', dir: 'ltr' },
         title: 'Adham Elsharkawy | Portfolio',
@@ -21,17 +18,14 @@ export default {
             }
         ]
     },
-
     router: {
         base: '/home/',
         middleware: ['redirect']
     },
-
     server: {
         port: parseInt(process.env.PORT) || 8000,
         host: '0.0.0.0'
     },
-
     css: [
         'locomotive-scroll/dist/locomotive-scroll.css',
         'normalize.css/normalize.css',
