@@ -12,8 +12,6 @@
 export default {
     name: 'DefaultLayout',
     mounted() {
-        this.clear();
-        // this.logGreeting();
         this.setViewHeight();
         window.addEventListener('resize', this.setViewHeight);
     },

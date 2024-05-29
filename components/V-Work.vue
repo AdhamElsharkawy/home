@@ -50,7 +50,7 @@ export default {
         display: grid;
         margin: 0 auto;
 
-        @media screen and(min-width: 798px) {
+        @media screen and (min-width: 798px) {
             &__item:nth-child(even) {
                 margin-block-start: 35%;
             }

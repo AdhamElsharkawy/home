@@ -33,6 +33,7 @@
     "@nuxtjs/eslint-config": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/svg": "^0.4.0",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.1.0",
@@ -42,10 +43,13 @@
     "glslify-loader": "^2.0.0",
     "nuxt-gsap-module": "^1.6.0",
     "nuxt-helmet": "3.0.0",
+    "postcss-import": "^16.1.0",
     "postcss-logical": "^5.0.4",
+    "postcss-url": "^10.1.3",
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
     "sass": "^1.49.9",
-    "sass-loader": "10"
+    "sass-loader": "10",
+    "tailwindcss": "^3.4.3"
   }
 }
